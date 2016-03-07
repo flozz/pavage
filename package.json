@@ -1,0 +1,29 @@
+{
+  "name": "pavage",
+  "version": "0.1.0",
+  "description": "Lightweight library to arrange HTML elements in a Waterfall / Pinterest-like positioning",
+  "main": "pavage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "uglifyjs pavage.js --mangle --compress --comments -o pavage.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flozz/pavage.git"
+  },
+  "keywords": [
+    "paving",
+    "disposition",
+    "waterfall",
+    "html"
+  ],
+  "author": "Fabien LOISON <http://www.flozz.fr/>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flozz/pavage/issues"
+  },
+  "homepage": "https://github.com/flozz/pavage#readme",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
+}

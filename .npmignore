@@ -1,0 +1,6 @@
+*.html
+*.png
+*.min.js
+TODO
+.jshintrc
+.tern-project
