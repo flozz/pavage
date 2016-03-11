@@ -18,10 +18,10 @@
     "use strict";
 
     function _getSmallerColumn(columns) {
-        var column = {size: Infinity};
+        var column = {offsetHeight: Infinity};
 
         for (var i = 0 ; i < columns.length ; i++) {
-            if (columns[i].size < column.size) {
+            if (columns[i].offsetHeight < column.offsetHeight) {
                 column = columns[i];
             }
         }
@@ -37,13 +37,11 @@
         var div = document.createElement("div");
         div.className = "waterfall-column";
         div.style.flexGrow = 1;
+        div.style.alignSelf = "flex-start";
         if (!first) {
             div.style.marginLeft = spacing + "px";
         }
-        return {
-            element: div,
-            size: 0
-        };
+        return div;
     }
 
     function generate(node) {
@@ -61,15 +59,14 @@
         for (i = 0 ; i < colCount ; i++) {
             column = _makeColumn(spacing, i === 0);
             columns.push(column);
-            node.appendChild(column.element);
+            node.appendChild(column);
         }
 
         for (i = 0 ; i < items.length ; i++) {
             if (!(items[i] instanceof HTMLElement)) continue;
             column = _getSmallerColumn(columns);
             items[i].style.marginBottom = spacing + "px";
-            column.element.appendChild(items[i]);
-            column.size += items[i].offsetHeight;
+            column.appendChild(items[i]);
         }
     }
 
