@@ -1,6 +1,6 @@
 # Pavage
 
-> Lightweight library to arrange HTML elements in a Waterfall / Pinterest-like positioning
+> Lightweight library to arrange HTML elements in a Waterfall / Pinterest-like column layout
 
 ![Example](https://raw.githubusercontent.com/flozz/pavage/master/demo.png)
 

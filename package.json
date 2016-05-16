@@ -1,7 +1,7 @@
 {
   "name": "pavage",
   "version": "0.1.0",
-  "description": "Lightweight library to arrange HTML elements in a Waterfall / Pinterest-like positioning",
+  "description": "Lightweight library to arrange HTML elements in a Waterfall / Pinterest-like column layout",
   "main": "pavage.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
